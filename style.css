@@ -1,0 +1,156 @@
+body {
+    background-color: #F3F5FC;
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+.logo {
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+    text-align: center;
+}
+
+main {
+    height: 944px;
+    margin: 40px 40px 40px 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.panel {
+    height: 100%;
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#textInput {
+    border: none;
+    background: none;
+    overflow: auto;
+    resize: none;
+    width: 680px;
+    height: 288px;
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 48px;
+    padding-top: 128px;
+}
+
+#textInput:focus {
+    outline: none;
+}
+
+#textInput::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+}
+
+#alert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-size: 12px;
+    color: #495057;
+    visibility: hidden;
+}
+
+.alert-text {
+    color: #495057;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.button {
+    border: none;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+}
+
+#encriptar {
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+#desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+#rightPanel {
+    height: 100%;
+    width: 400px;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightPanel-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 30px;
+}
+
+.rightPanel-text h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    height: 58px;
+    padding: 0 10px;
+}
+
+.rightPanel-text p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    height: 48px;
+    padding: 0 10px;
+}
+
+#textOutput {
+    width: 336px;
+    height: 781px;
+    margin: 32px;
+    border: none;
+    background: none;
+    overflow: auto;
+    resize: none;
+    color: #495057;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+#copyButton {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    margin: 32px;
+    color: #0A3871;
+    background: none;
+}
