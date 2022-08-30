@@ -37,11 +37,11 @@ main {
     overflow: auto;
     resize: none;
     width: 680px;
-    height: 288px;
+    height: 600px;
     color: #0A3871;
     font-size: 32px;
     line-height: 48px;
-    padding-top: 128px;
+    margin-top: 128px;
 }
 
 #textInput:focus {

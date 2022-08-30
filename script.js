@@ -5,7 +5,7 @@ function clearText() {
 function copyToClipboard() {
     let copyText = document.getElementById("textOutput").value;
     navigator.clipboard.writeText(copyText);
-    clearText();
+    document.getElementById("copyButton").innerHTML = "Copiado!";
 }
 
 function copyButton() {
@@ -32,11 +32,7 @@ function validateText() {
     let textInput = document.getElementById("textInput").value;
     let regex = /[A-ZÀ-ÿ]/
     if (textInput.match(regex)) {
-        document.getElementById("alertIcon").style.display = "inline-block";
-        let alert = document.createElement("p");
-        alert.setAttribute("class", "alert");
-        alert.innerHTML = "";
-        document.getElementById("alerta").appendChild(alert);
+        document.getElementById("alert").style.visibility = "visible";
         return true;
     } else {
         return false;
