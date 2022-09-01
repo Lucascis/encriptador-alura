@@ -50,7 +50,12 @@ main {
 
 #textInput::placeholder {
     color: #0A3871;
+    font-family: 'Inter';
     font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 #alert {
@@ -178,7 +183,6 @@ main {
 
     .panel {
         width: 100%;
-        justify-content: space-between;
     }
 
     #textInput {
@@ -197,8 +201,6 @@ main {
         width: 100%;
         height: auto;
         margin: 0 40px;
-        flex-direction: column;
-        justify-content: center;
         gap: 32px;
     }
 
@@ -235,42 +237,65 @@ main {
     }
 
     main {
-        width: 100%;
-        margin: 0 16px;
+        width: 343px;
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0 16px;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
     }
 
+    .panel {
+        align-items: center;
+    }
+
     #textInput {
-        width: 327px;
+        width: 100%;
         padding: 0;
+        margin-top: 152px;
     }
 
     .buttonsContainer {
-        display: flex;
+        width: 343px;
+        margin: 0;
         flex-direction: column;
         gap: 24px;
+    }
+
+    .button {
+        width: 343px;
     }
 
     #rightPanel {
         width: 327px;
         height: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin: 0;
     }
 
     .rightPanel-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
-        margin: 0;
-        gap: 16px;
+        margin: 32px;
         width: 263px;
         height: 122px;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .rightPanel-text h2 {
+        padding: 0;
+        height: 58px;
+    }
+    .rightPanel-text p {
+        padding: 0;
+        height: 48px;
+    }
+
+    #textOutput {
+        width: 279px;
+    }
+
+    #copyButton {
+        width: 279px;
     }
 }
